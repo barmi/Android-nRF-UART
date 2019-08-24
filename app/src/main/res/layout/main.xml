@@ -36,14 +36,14 @@
                 android:id="@+id/sendText"
                 android:layout_width="102dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
                 android:layout_toLeftOf="@+id/sendButton"
                 android:ems="10"
                 android:enabled="false"
                 android:fontFamily="1"
                 android:lines="1"
-                android:maxLength="20"
+                android:maxLength="100"
                 android:maxLines="1"
                 android:shadowRadius="1" />
 

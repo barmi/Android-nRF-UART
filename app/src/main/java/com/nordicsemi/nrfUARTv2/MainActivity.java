@@ -139,7 +139,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
             @Override
             public void onClick(View v) {
             	EditText editText = (EditText) findViewById(R.id.sendText);
-            	String message = editText.getText().toString();
+            	String message = editText.getText().toString()+"\r\n";
             	byte[] value;
 				try {
 					//send data to service
@@ -149,7 +149,7 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 					String currentDateTimeString = DateFormat.getTimeInstance().format(new Date());
 					listAdapter.add("["+currentDateTimeString+"] TX: "+ message);
                	 	messageListView.smoothScrollToPosition(listAdapter.getCount() - 1);
-               	 	edtMessage.setText("");
+               	 	//edtMessage.setText("");
 				} catch (UnsupportedEncodingException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
